@@ -1,0 +1,111 @@
+/* GameDock Main Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.container h2 {
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+.container p {
+    line-height: 1.6;
+}
+
+.game-card,
+.home-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card h3,
+.home-card h3 {
+    color: #1d3557;
+}
+
+.game-img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1d3557;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #457b9d;
+}
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .game-img {
+        width: 200px;
+        height: 240px;
+    }
+}
