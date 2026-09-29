@@ -1,0 +1,261 @@
+/* GameDock Main Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Logo styling */
+.logo {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;
+}
+
+.hero h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.4rem;
+}
+
+.hero-text {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+ 
+nav a:hover {
+    color: #7cc6fe;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.container h2 {
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+.container p {
+    line-height: 1.6;
+}
+
+/* ===== INTRO ===== */
+.intro {
+    margin-bottom: 50px;
+}
+
+/* ===== FEATURE CARDS ===== */
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1d3557;
+    margin: 0 0 12px 0;
+}
+
+.feature-card p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.card-link {
+    color: #1d3557;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== CALLOUT SECTION ===== */
+.callout {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25)
+}
+ 
+.button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0*35);
+    background: linear-gradie*t(135deg, #457b9d, #5aa9e6);
+}
+
+.button-outline {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.button-outline:hover {
+    background-color: white;
+    color: #1d3557;
+}
+/* ===== GAMES CONTAINER ===== */
+.games-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* ===== EXISTING STYLES (kept for other pages) ===== */
+.game-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.home-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card h3 {
+    color: #1d3557;
+    padding: 15px 15px 5px;
+    margin: 0;
+}
+.game-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+.home-card h3 {
+    color: #1d3557;
+}
+
+.game-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .logo {
+        max-width: 130px;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .game-img {
+        width: 200px;
+        height: 240px;
+    }
+}

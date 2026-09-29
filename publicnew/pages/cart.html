@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gamedock - Cart</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>Your Cart</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="review.html">Reviews</a>
+    <a href="games.html">Games</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+</nav>
+
+<div class="container">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-items">
+        <!-- Items will be loaded by JavaScript -->
+    </div>
+
+    <div style="margin-top: 30px;">
+        <h3>Total: <span id="cart-total">$0.00</span></h3>
+        <br>
+        <button onclick="clearCart()" class="button" style="background-color: #c0392b;">
+            Clear Cart
+        </button>
+        <a href="games.html" class="button">Continue Shopping</a>
+    </div>
+
+    <p style="margin-top: 40px; color: #666; font-size: 0.95rem;">
+        This is a demo cart. No real purchases are processed.
+    </p>
+
+</div>
+
+<script src="../assets/js/cart.js"></script>
+
+<footer>
+    <p>&copy; 2026 GameDock | Built for Gamers 🎮</p>
+</footer>
+</body>
+</html>
