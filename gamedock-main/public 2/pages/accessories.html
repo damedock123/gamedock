@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gamedock - Accessories</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Gaming Accessories</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="review.html">Reviews</a>
+    <a href="games.html">Buy Games</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+</nav>
+
+<div class="container">
+    <h2>Available Accessories</h2>
+
+    <div class="game-card">
+        <h3>PS5 Pro</h3>
+        <img class="game-img" src="../assets/img/ps5.webp" alt="PS5 Pro">
+        <p>A faster, upgraded PlayStation that boosts graphics and performance for smoother gameplay.</p>
+        <p>$1399.99</p>
+        <button class="button" onclick="addToCart('PS5 Pro', 1399.99, '../assets/img/ps5.webp')">Add to Cart</button>
+    </div>
+
+    <div class="game-card">
+        <h3>Xbox Series X Pro</h3>
+        <img class="game-img" src="../assets/img/xbox.webp" alt="Xbox Series X Pro">
+        <p>A powerful Xbox model built for high-speed loading and sharp 4K gaming.</p>
+        <p>$799.99</p>
+        <button class="button" onclick="addToCart('Xbox Series X Pro', 799.99, '../assets/img/xbox.webp')">Add to Cart</button>
+    </div>
+
+    <div class="game-card">
+        <h3>Nintendo Switch 2</h3>
+        <img class="game-img" src="../assets/img/nintendo.webp" alt="Nintendo Switch 2">
+        <p>A new hybrid console that lets you play on the TV or on the go with better visuals.</p>
+        <p>$499.99</p>
+        <button class="button" onclick="addToCart('Nintendo Switch 2', 499.99, '../assets/img/nintendo.webp')">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="../assets/js/cart.js"></script>
+</body>
+</html>

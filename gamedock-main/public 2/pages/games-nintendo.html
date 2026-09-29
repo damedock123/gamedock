@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gamedock - Nintendo Games</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Nintendo Games</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="review.html">Reviews</a>
+    <a href="games.html">Buy Games</a>
+    <a href="accessories.html">Accessories</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+</nav>
+
+<div class="container">
+
+    <h2>Nintendo Games</h2>
+
+    <div style="margin: 25px 0 40px 0; text-align: center;">
+        <a class="button" href="games.html">All Games</a>
+        <a class="button" href="games-ps5.html">PS5</a>
+        <a class="button" href="games-xbox.html">Xbox</a>
+        <a class="button" href="games-nintendo.html">Nintendo</a>
+    </div>
+
+    <div class="game-card">
+        <h3>Pragmata</h3>
+        <img class="game-img" src="../assets/img/pragmata.webp" alt="Pragmata">
+        <p>PS5, Nintendo Switch 2, Xbox</p>
+        <p>A mysterious sci-fi adventure about a girl and an astronaut fighting to survive on a ruined Earth.</p>
+        <p>$49.99</p>
+        <button class="button" onclick="addToCart('Pragmata', 49.99, '../assets/img/pragmata.webp')">Add to Cart</button>
+    </div>
+
+    <div class="game-card">
+        <h3>Lego Batman: Legacy of the Dark Knight</h3>
+        <img class="game-img" src="../assets/img/batman.webp" alt="Lego Batman">
+        <p>PS5, Nintendo Switch 2, Xbox</p>
+        <p>A fun, action-packed Lego adventure where Batman faces new villains across Gotham.</p>
+        <p>$59.99</p>
+        <button class="button" onclick="addToCart('Lego Batman: Legacy of the Dark Knight', 59.99, '../assets/img/batman.webp')">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="../assets/js/cart.js"></script>
+</body>
+</html>
